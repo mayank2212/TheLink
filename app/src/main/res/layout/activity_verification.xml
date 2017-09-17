@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dip"
+    tools:context=".LoginAndRegister.VerificationActivity">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/relativeLayout2">
+
+        <LinearLayout
+            android:id="@+id/inputContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/numberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter Number"
+        android:textAllCaps="true"
+        android:textColor="@color/text_color"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text=""
+        android:layout_above="@+id/inputCode"
+        android:layout_marginBottom="98dp"
+        android:layout_alignRight="@+id/codeInputButton"
+        android:layout_alignEnd="@+id/codeInputButton"
+        android:layout_alignLeft="@+id/codeInputButton"
+        android:layout_alignStart="@+id/codeInputButton" />
+
+    <TextView
+        android:id="@+id/resend_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Resend via call ()"
+        android:textColor="@color/text_color"
+        android:textSize="16sp"
+        android:layout_marginTop="65dp"
+        android:layout_alignTop="@+id/codeInputButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/codeInputButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:minHeight="56dp"
+        android:onClick="onSubmitClicked"
+        android:text="Verify"
+        android:background="@color/colorPrimary"
+        android:textAllCaps="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
+        android:layout_marginBottom="118dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/inputCode"
+        android:layout_width="150dp"
+        android:hint="Otp"
+        android:gravity="center"
+        android:cursorVisible="true"
+
+        android:textSize="25sp"
+        android:maxLength="4"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:layout_marginBottom="51dp"
+        android:layout_above="@+id/codeInputButton"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

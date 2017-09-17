@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="5dp"
+    android:longClickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#fff"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:orientation="horizontal"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/follow_photo"
+            android:layout_width="70dp"
+            android:layout_height="73dp"
+            app:civ_border_width="0.50dp"
+            app:civ_border_color="#FF2C55"
+            android:padding="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/logo"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:layout_marginTop="10dp"
+            android:id="@+id/followers_name"
+            android:maxLines="1"
+            android:textSize="17dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/text_color"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/follow_photo"
+            android:layout_toEndOf="@+id/follow_photo" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:minHeight="0dp"
+            android:textColor="@color/holo_pink_"
+            android:text="Delete"
+            android:textSize="13sp"
+            android:background="@drawable/delete_button_selector"
+            android:id="@+id/show_followers"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:maxLines="1"
+            android:id="@+id/textView20"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/holo_pink_"
+            android:layout_below="@+id/followers_name"
+            android:layout_alignLeft="@+id/followers_name"
+            android:layout_alignStart="@+id/followers_name" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

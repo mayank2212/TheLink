@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="org.thelink.Profile.Feedback">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#80000000"
+        android:id="@+id/mainlayoutfeedback"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/scrollView">
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Feedback"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:id="@+id/textView8"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+
+                android:ems="10"
+                android:id="@+id/feedback"
+                android:layout_below="@+id/textView8"
+                android:inputType="textMultiLine"
+                android:background="@drawable/newcorner"
+                android:lines="12"
+                android:minLines="12"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:gravity="top|left"
+                android:maxLines="12"
+                android:padding="8dp"
+                android:layout_height="230dp"
+                android:layout_width="fill_parent"
+                android:scrollbars="vertical"
+                android:layout_marginTop="33dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:elevation="5dp"
+                android:textSize="15sp"
+                android:background="#FFFFFF"
+                android:id="@+id/submit"
+                android:layout_below="@+id/feedback"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/nointernetfeedback"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="No Internet Connection... Please connect to internet.."
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="110dp" />
+    </RelativeLayout>
+</RelativeLayout>

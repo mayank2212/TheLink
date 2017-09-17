@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.thelink.Home.PlayListClass">
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar_playlist_friend"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:minHeight="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:layout_below="@+id/toolbar_playlist_friend"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout5">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:padding="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:maxLines="1"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif"
+            android:ellipsize="end"
+            android:id="@+id/textView21"
+            android:textColor="@color/text_color"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/button8"
+            android:layout_toStartOf="@+id/button8" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:minHeight="0dp"
+            android:layout_height="40dp"
+            android:text=""
+            android:background="@drawable/decline_bacground"
+            android:textColor="@color/holo_pink_"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:id="@+id/button8"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/holo_pink_"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="2dp"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:id="@+id/listView"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

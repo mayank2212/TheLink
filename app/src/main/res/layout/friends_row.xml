@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/friend_card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="4dp"
+    card_view:contentPadding="1dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_margin="2dp"
+    card_view:cardBackgroundColor="#fff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/friends_image"
+            android:layout_width="98dp"
+            android:layout_height="98dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#fff"
+            android:padding="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <View
+            android:layout_width="96dp"
+            android:layout_height="0.80dp"
+            android:id="@+id/view"
+            android:layout_marginTop="0.75dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_below="@id/friends_image"
+            android:background="@color/holo_pink_"
+            />
+        <TextView
+            android:id="@+id/friend_name"
+            android:layout_below="@+id/view"
+            android:layout_width="98dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Mayank"
+            android:maxLength="15"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginTop="2dp"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+        <TextView
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:maxLines="1"
+            android:textSize="10sp"
+            android:text="9871753634"
+            android:layout_marginRight="2dp"
+            android:id="@+id/friend_number"
+            android:textColor="@color/text_color"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_below="@+id/friend_name"
+            android:layout_marginTop="0.5dp"
+            android:layout_alignLeft="@+id/friend_name"
+            android:layout_alignStart="@+id/friend_name" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

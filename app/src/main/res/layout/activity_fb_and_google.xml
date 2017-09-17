@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    tools:context=".MainActivity"
+   >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/mainfblayout"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Login via Facebook"
+            android:id="@+id/facebook"
+            android:layout_gravity="center_horizontal"
+            android:background="#3b5998"
+            android:textColor="#ffffffff"
+            android:layout_marginBottom="14dp"
+            android:layout_above="@+id/button5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/holo_pink_"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/button5" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Login via GooglePlus"
+            android:id="@+id/googleplus"
+            android:background="#D34836"
+            android:textColor="#ffffffff"
+            android:layout_below="@+id/button5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Almost there!"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/textView"
+            android:layout_marginTop="28dp"
+
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Choose a network to get started."
+            android:id="@+id/textView7"
+            android:gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/textView"
+          />
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/nointernetfb"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="No Internet Connection... Please connect to internet.."
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="110dp" />
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

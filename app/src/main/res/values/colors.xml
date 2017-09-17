@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF2C55</color>
+    <color name="colorPrimaryDark">#B3FF2C55</color>
+    <color name="colorAccent">#FF2C55</color>
+    <color name="AppBackgroundColor">#e0d8d8</color>
+    <color name="red">#FF1500</color>
+    <color name="black">#000</color>
+
+
+    <color name="playlistdarkprimary">#33000000</color>
+    <color name="playlistprimary">#99000000</color>
+    <color name="tab_background_unselected">#8BC34A</color>
+    <color name="tab_background_selected">#FFFFFF</color>
+    <color name="followlistback">#66ffffff</color>
+    <color name="white_20">#ffffffff</color>
+    <color name="playlistrowback">#8C689F38</color>
+   <color name="transparentback">#80ffffff</color>
+
+    <color name="dot_dark_screen1">#FF2C55</color>
+    <color name="dot_dark_screen2">#FF2C55</color>
+    <color name="dot_dark_screen3">#FF2C55</color>
+    <color name="dot_dark_screen4">#FF2C55</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#ffffff</color>
+    <color name="dot_light_screen2">#ffffff</color>
+    <color name="dot_light_screen3">#ffffff</color>
+    <color name="dot_light_screen4">#ffffff</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+
+    <!--   New App Theme Colors      -->
+    <color name="holo_pink_">#FF2C55</color>
+    <color name="holo_pink_listselector">#EEEEEE</color>
+    <color name="toolbar_color">#F6F6F6</color>
+    <color name="view_color">#CFCDC7</color>
+    <color name="text_color">#312C2C</color>
+</resources>

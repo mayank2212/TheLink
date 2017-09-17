@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.thelink">
+
+    <uses-sdk tools:node="merge" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginAndRegister.FbAndGoogle"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntroSlider.WelcomeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InviteActivity.HomeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchableActivity" />
+        </activity>
+        <activity
+            android:name=".MusicPlayer.MusicPlayerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity
+            android:name=".Following.Follow_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity
+            android:name=".Profile.Profile_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity
+            android:name=".InviteActivity.FriendRequest"
+            android:label="Follow Request"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity
+            android:name=".PlayListClasses.PlayListActivity"
+            android:label="Music Files"
+            android:screenOrientation="portrait"
+            android:theme="@style/PlaylistActivityTheme">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <service android:name=".Notification.MyFireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Notification.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".Service.NetWatcher">
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".Service.SongService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".Profile.Followers"
+            android:label="Followers"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity
+            android:name=".Profile.Feedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginAndRegister.VerificationActivity"
+            android:screenOrientation="portrait" />
+        <!-- Include the AdActivity configChanges and theme. -->
+        <!--
+            <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        -->
+        <activity
+            android:name=".Home.Home_Download_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity
+            android:name=".Home.TgifSongs"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity
+            android:name=".Home.YoutubeClass"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity
+            android:name=".Home.FriendsDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity
+            android:name=".Home.PlayListClass"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity
+            android:name=".Home.BollywoodSongs"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity
+            android:name=".Home.EdmSongs"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity
+            android:name=".Home.TrendingSongs"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity
+            android:name=".Home.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity android:name=".Home.WebviewActivity" />
+        <activity
+            android:name=".Profile.PlayListSongs"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity
+            android:name=".Profile.FollowingClass"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeActivityTheme" />
+        <activity android:name=".Profile.CreatePlayListActivity"
+            android:theme="@style/HomeActivityTheme"
+            />
+    </application>
+
+</manifest>

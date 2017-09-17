@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <EditText
+
+        android:ems="10"
+        android:id="@+id/morechannel"
+        android:inputType="textMultiLine"
+        android:background="@drawable/newcorner"
+        android:lines="12"
+        android:hint="Enter your text here.."
+        android:minLines="12"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:gravity="top|left"
+        android:maxLines="12"
+        android:padding="8dp"
+        android:layout_height="230dp"
+        android:layout_width="fill_parent"
+        android:scrollbars="vertical"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
+    <Button
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitbutton"
+        android:layout_below="@+id/morechannel"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignTop="@+id/btn_dialog"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dismiss"
+        android:layout_below="@+id/morechannel"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/dismissbutton"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2" />
+
+
+
+
+
+
+</RelativeLayout>

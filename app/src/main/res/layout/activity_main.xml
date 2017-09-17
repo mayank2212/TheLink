@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/toolbar_color"
+        android:id="@+id/mainlayoutnumber"
+        android:layout_height="match_parent"
+        android:textAlignment="gravity">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:id="@+id/innerlayout"
+            android:gravity="center_vertical"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/numberbackground"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="92dp"
+                android:id="@+id/view">
+
+                <EditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="28sp"
+                    android:gravity="start"
+                    android:cursorVisible="true"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textCursorDrawable="@null"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/logo"
+                android:layout_marginTop="59dp"
+                android:src="@drawable/logo"
+                android:foregroundGravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/tick"
+            android:onClick="onButtonClicked"
+            android:background="@drawable/roundbutton"
+            android:layout_marginTop="-30dp"
+            android:id="@+id/smsVerificationButton"
+            android:layout_below="@+id/innerlayout"
+            android:layout_centerHorizontal="true" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I Agree"
+            android:textSize="10sp"
+            android:id="@+id/checkBox"
+            android:checked="true"
+            android:textColor="@color/text_color"
+            android:layout_marginLeft="56dp"
+            android:layout_marginStart="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/innerlayout"
+            android:layout_alignStart="@+id/innerlayout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color"
+            android:layout_alignParentBottom="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=" Terms And Condition"
+            android:id="@+id/textView11"
+           />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/nointernetnumber"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="No Internet Connection... Please connect to internet.."
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="110dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

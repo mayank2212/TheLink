@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.thelink.Home.SearchActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar_search"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:minHeight="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar_color"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_edittext"
+        android:background="@drawable/search_edittext_background"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:drawableRight="@android:drawable/ic_menu_close_clear_cancel"
+        android:drawablePadding="18dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:hint="Enter song name here.."
+        android:layout_below="@+id/toolbar_search"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/search_button"
+        android:layout_alignEnd="@+id/search_button" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@color/holo_pink_"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:elevation="2dp"
+        android:id="@+id/search_button"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/search_edittext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:id="@+id/search_list_view"
+        android:layout_below="@+id/search_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>

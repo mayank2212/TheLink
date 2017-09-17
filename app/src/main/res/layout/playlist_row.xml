@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/playlist_background"
+    android:elevation="5dp"
+  >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+      >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/songname"
+            android:maxLines="2"
+            android:textColor="@android:color/black"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignTop="@+id/imageButton_download"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_toLeftOf="@+id/imageButton_download"
+            android:layout_toStartOf="@+id/imageButton_download" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageButton_download"
+            android:background="@drawable/download"
+            android:layout_marginRight="34dp"
+            android:layout_marginEnd="34dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

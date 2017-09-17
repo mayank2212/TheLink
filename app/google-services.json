@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "622764390711",
+    "firebase_url": "https://thelink-a6660.firebaseio.com",
+    "project_id": "thelink-a6660",
+    "storage_bucket": "thelink-a6660.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622764390711:android:c221a73bcd6429da",
+        "android_client_info": {
+          "package_name": "org.thelink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622764390711-ah4d1o20r9hvabt06q0fpc26asaju29s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.thelink",
+            "certificate_hash": "C79B0B42A6AFFF00E6574A4F7F6DB3CE032CBB2D"
+          }
+        },
+        {
+          "client_id": "622764390711-n49p5ahf10bk63hbvds0l7sp46qrhgdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsRihK3nj-UX0ukALpEas4giXIfPjuu0Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622764390711-n49p5ahf10bk63hbvds0l7sp46qrhgdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.materialtheme.MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/search_pink"
+        android:orderInCategory="1"
+        app:showAsAction="always|withText"
+        android:showAsAction="ifRoom"
+        android:title="Search"/>
+
+
+</menu>

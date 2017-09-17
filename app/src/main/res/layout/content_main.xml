@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.googlepluslogin.NewActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/profile_main"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout4">
+
+            <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:id="@+id/blur_imageview"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_profile_photo"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:padding="7dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp" />
+                <TextView
+                    android:id="@+id/user_profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_below="@+id/user_profile_photo"
+                    android:layout_centerHorizontal="true"
+                    android:text="Mayank Bhatnagar"
+                    android:textColor="@color/text_color"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_profile_short_bio"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="9871753634"
+                    android:layout_below="@+id/user_profile_name"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/holo_pink_"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="62dp"
+                android:background="@color/black"
+                android:id="@+id/linear_textview"
+                android:layout_below="@+id/profile_layout"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="31dp"
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                    <TextView
+                        android:id="@+id/followingname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="26dp"
+                        android:layout_weight="0.5"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/text_color"
+                        android:gravity="center"
+                        android:text="Following" />
+                    <TextView
+                        android:id="@+id/followername"
+                        android:layout_width="fill_parent"
+                        android:layout_height="26dp"
+                        android:fontFamily="sans-serif"
+                        android:layout_weight="0.5"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color"
+                        android:gravity="center"
+                        android:text="Follower" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@color/holo_pink_"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/followingno"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:text="- -" />
+                    <TextView
+                        android:id="@+id/followno"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif"
+                        android:textSize="25sp"
+                        android:layout_width="fill_parent"
+                        android:textStyle="bold"
+                        android:layout_height="35dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="- -" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.ashokvarma.bottomnavigation.BottomNavigationBar
+            android:id="@+id/bottom_navigation_bar_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"/>
+
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:id="@+id/listprofile"
+            android:layout_below="@+id/relativeLayout4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/bottom_navigation_bar_profile" />
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/nointernetprofile"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="No Internet Connection... Please connect to internet.."
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="110dp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
